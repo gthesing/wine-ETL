@@ -9,14 +9,14 @@ USE winery_db;
 CREATE TABLE coordinates (
   ID int(50) AUTO_INCREMENT,
   winery TEXT (100),
-  latitude DECIMAL(20,10),
-  longitude DECIMAL(20,10),
+  latitude DECIMAL(20,6),
+  longitude DECIMAL(20,6),
   primary KEY(ID)
 );
 
-INSERT INTO coordinates(winery,latitude,longitude)
-VALUES ("Nicosia", 35.1855659, 33.3822763999999),
-("Quinta dos Avidagos", 41.3876897, -7.2768652);
+-- INSERT INTO coordinates(winery,latitude,longitude)
+-- VALUES ("Nicosia", 35.1855659, 33.3822763999999),
+-- ("Quinta dos Avidagos", 41.3876897, -7.2768652); 
 
 
 SELECT `coordinates`.`ID`,
@@ -24,6 +24,3 @@ SELECT `coordinates`.`ID`,
     `coordinates`.`latitude`,
     `coordinates`.`longitude`
 FROM `winery_db`.`coordinates`;
-
-
-
