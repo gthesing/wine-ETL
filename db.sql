@@ -1,23 +1,18 @@
--- Drops the animals_db if it exists currently --
+-- Drops the winery_db if it exists currently --
 DROP DATABASE IF EXISTS winery_db;
 
 -- Create and use winery_db
 CREATE DATABASE winery_db;
 USE winery_db;
 
--- Create tables for raw data to be loaded into
+-- Create tables for latitude and longitude data to be loaded into
 CREATE TABLE coordinates (
   ID int(50) AUTO_INCREMENT,
-  winery VARCHAR (100),
-  latitude DECIMAL(20,8),
-  longitude DECIMAL(20,8),
+  winery VARCHAR (100) CHARACTER SET utf8,
+  latitude DECIMAL(20,5),
+  longitude DECIMAL(20,5),
   primary KEY(ID)
 );
-
--- INSERT INTO coordinates(winery,latitude,longitude)
--- VALUES ("Nicosia", 35.1855659, 33.3822763999999),
--- ("Quinta dos Avidagos", 41.3876897, -7.2768652); 
-
 
 SELECT `coordinates`.`ID`,
     `coordinates`.`winery`,
