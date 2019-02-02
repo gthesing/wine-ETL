@@ -8,9 +8,9 @@ USE winery_db;
 -- Create tables for raw data to be loaded into
 CREATE TABLE coordinates (
   ID int(50) AUTO_INCREMENT,
-  winery TEXT (100),
-  latitude DECIMAL(20,6),
-  longitude DECIMAL(20,6),
+  winery VARCHAR (100),
+  latitude DECIMAL(20,8),
+  longitude DECIMAL(20,8),
   primary KEY(ID)
 );
 
