@@ -1,5 +1,5 @@
 # wine-reviews-project2
-##### documents for UT data boot camp project for ETF procedure
+##### documents for UT data boot camp project for ETL procedure
 
 ### Order to run files for duplicating this project:
 1. raw_data/geo_data/geo_data.ipynb  
