@@ -1,5 +1,5 @@
 # Wine Reviews ETL
-A project for UT Data Analysis Boot Camp by (gthesing)[https://github.com/gthesing] and (kristxh)[https://github.com/kristxh]
+A project for UT Data Analysis Boot Camp by [gthesing](https://github.com/gthesing) and [kristxh](https://github.com/kristxh)
 
 ### Project Description
 #### Extract
