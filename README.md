@@ -4,7 +4,7 @@ A project for the UT Data Analysis Boot Camp by [gthesing](https://github.com/gt
 
 <br>
 
-### Project Description
+## Project Description
 #### Extract
 * The initial data for this project was downloaded as a csv file from a [Kaggle dataset](https://www.kaggle.com/zynicide/wine-reviews) scraped from WineEnthusiast by Kaggle user [zackthoutt](https://www.kaggle.com/zynicide)
 * From there, we ran a series of Google API calls to return geographic coordinates for wineries; the code for the API calls can be found [here](https://github.com/gthesing/wine-ETL/blob/master/raw_data/geo_data/geo_data.ipynb)
@@ -18,9 +18,9 @@ A project for the UT Data Analysis Boot Camp by [gthesing](https://github.com/gt
 * The database and schema were created in [db.sql](https://github.com/gthesing/wine-ETL/blob/master/db.sql) in preparation for loading from the ETL notebook
 * SQLAlchemy and PyMySQL were used to create a connection with the database. From there Pandas was used to load the three dataframes to the SQL database as tables, and to run a few queries to confirm that the data had been loaded correctly
 
-*****
+<br>
 
-### Order to run files for duplicating this project:
+## Order to run files for duplicating this project:
 1. [raw_data/geo_data/geo_data.ipynb](https://github.com/gthesing/wine-ETL/blob/master/raw_data/geo_data/geo_data.ipynb)  
     * This file made the necessary API calls to Google to get, and create a csv file of, the geographical data for wineries in our raw data set
 2. [db.sql](https://github.com/gthesing/wine-ETL/blob/master/db.sql)
