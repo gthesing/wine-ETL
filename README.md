@@ -15,7 +15,7 @@ A project for the UT Data Analysis Boot Camp by [gthesing](https://github.com/gt
    2. Review: one entry for each review, with data for the reviewer's name, description, score, and price
    3. Bottle ID: one entry for each bottle title, with data for its variety and winery of origin
 #### Load 
-* The database framework was created in [db.sql](https://github.com/gthesing/wine-ETL/blob/master/db.sql) in preparation for a load from the ETL notebook
+* The database and schema were created in [db.sql](https://github.com/gthesing/wine-ETL/blob/master/db.sql) in preparation for loading from the ETL notebook
 * SQLAlchemy and PyMySQL were used to create a connection with the database. From there Pandas was used to load the three dataframes to the SQL database as tables, and to run a few queries to confirm that the data had been loaded correctly
 
 *****
