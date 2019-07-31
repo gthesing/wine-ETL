@@ -1,15 +1,4 @@
-# wine-ETL
-##### documents for UT data boot camp project for ETL procedure
-
-### Order to run files for duplicating this project:
-1. [raw_data/geo_data/geo_data.ipynb](https://github.com/gthesing/wine-ETL/blob/master/raw_data/geo_data/geo_data.ipynb)  
-    * This file made the necessary API calls to Google to get, and create a csv file of, the geographical data for wineries in our raw data set
-2. [db.sql](https://github.com/gthesing/wine-ETL/blob/master/db.sql)
-    * Creates the empty database and schema, ready for data load 
-3. [ETL_final.ipynb](https://github.com/gthesing/wine-ETL/blob/master/ETL_final.ipynb)
-    * Extracts, transforms, and loads all data to SQL database 
-
-*****
+# Wine Reviews ETL
 
 ### Project Description
 #### Extract
@@ -24,3 +13,13 @@
 #### Load 
 * The database framework was created in [db.sql](https://github.com/gthesing/wine-ETL/blob/master/db.sql) in preparation for a load from the ETL notebook
 * SQLAlchemy and PyMySQL were used to create a connection with the database. From there Pandas was used to load the three dataframes to the SQL database as tables, and to run a few queries to confirm that the data had been loaded correctly
+
+*****
+
+### Order to run files for duplicating this project:
+1. [raw_data/geo_data/geo_data.ipynb](https://github.com/gthesing/wine-ETL/blob/master/raw_data/geo_data/geo_data.ipynb)  
+    * This file made the necessary API calls to Google to get, and create a csv file of, the geographical data for wineries in our raw data set
+2. [db.sql](https://github.com/gthesing/wine-ETL/blob/master/db.sql)
+    * Creates the empty database and schema, ready for data load 
+3. [ETL_final.ipynb](https://github.com/gthesing/wine-ETL/blob/master/ETL_final.ipynb)
+    * Extracts, transforms, and loads all data to SQL database 
